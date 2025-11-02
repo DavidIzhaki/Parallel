@@ -1,52 +1,38 @@
+    .text
     .globl cfunction
-    .type  cfunction, @function
 cfunction:
-    # (d + i)
-    vcvtsi2sd  %edi, %xmm2, %xmm2       # convert i -> double
-    vaddsd     %xmm2, %xmm0, %xmm0      # xmm0 = d + i
-
-    # (f * l)
-    vcvtsi2ss  %rsi, %xmm2, %xmm2       # convert l -> float
-    vmulss     %xmm2, %xmm1, %xmm1      # xmm1 = f * l
-
-    # convert denominator to double
-    vcvtss2sd  %xmm1, %xmm1, %xmm1      # (double)(f*l)
-
-    # divide
-    vdivsd     %xmm1, %xmm0, %xmm0      # (d+i)/(f*l)
+    cvtsi2sd   %edi, %xmm2
+    addsd      %xmm2, %xmm0
+    cvtsi2ss   %rsi, %xmm2
+    mulss      %xmm2, %xmm1
+    cvtss2sd   %xmm1, %xmm1
+    divsd      %xmm1, %xmm0
     ret
 
-#----------------------------------------
-# main()
-#----------------------------------------
     .globl main
-    .type  main, @function
 main:
     push   %rbp
     mov    %rsp, %rbp
+    sub    $8, %rsp                # 16B-align stack before calls
 
     mov    $2,  %edi               # i
-    movsd  .Ldouble(%rip), %xmm0   # d = 8.0
+    movsd  .Ld(%rip), %xmm0        # d = 8.0
     mov    $4,  %rsi               # l
-    movss  .Lfloat(%rip), %xmm1    # f = 1.5
-    call   cfunction
+    movss  .Lf(%rip), %xmm1        # f = 1.5
+    call   cfunction               # result in xmm0
 
-    movsd  %xmm0, -8(%rbp)         # store result
-    movsd  -8(%rbp), %xmm0
-
-    # print result
-    mov    $.Lformat, %rdi
-    mov    $0, %eax
+    mov    $.Lfmt, %rdi            # printf format
+    mov    $1, %eax                # <-- number of XMM/SSE args (xmm0)
     call   printf
 
-    mov    $0, %eax
+    xor    %eax, %eax
+    add    $8, %rsp
     leave
     ret
 
-#----------------------------------------
-# Data
-#----------------------------------------
     .section .rodata
-.Ldouble: .double 8.0
-.Lfloat:  .float 1.5
-.Lformat: .string "Assembly: (8.00 + 2) / (1.50 * 4) = %.4f\n"
+.Ld:   .double 8.0
+.Lf:   .float  1.5
+.Lfmt: .string "Assembly: (8.00 + 2) / (1.50 * 4) = %.4f\n"
+
+    .section .note.GNU-stack,"",@progbits
