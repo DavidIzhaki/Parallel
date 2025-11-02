@@ -1,0 +1,8 @@
+compile for c_inttinsics.c : 
+gcc -O3 -Wall -msse2 c_intrinsics.c -o c_intrinsics
+
+
+compile for c_asm.s:
+gcc -O3 -no-pie c_asm.s -o c_asm
+
+
