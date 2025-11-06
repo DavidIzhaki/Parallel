@@ -1,0 +1,10 @@
+gcc -o recursive recursive_bitonic_sort.c
+./recursive
+
+
+gcc -o iterative iterative_bitonic_sort.c
+./iterative
+
+
+gcc -o parallel iter_parallel.c thr_pool.c -lpthread
+./parallel

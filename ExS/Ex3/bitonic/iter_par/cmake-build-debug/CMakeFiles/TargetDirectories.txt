@@ -1,0 +1,3 @@
+/mnt/d/OneDrive - Bar-Ilan University - Students/Desktop/TA/קודים/bitonic/iter_par/cmake-build-debug/CMakeFiles/bitonic.dir
+/mnt/d/OneDrive - Bar-Ilan University - Students/Desktop/TA/קודים/bitonic/iter_par/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/OneDrive - Bar-Ilan University - Students/Desktop/TA/קודים/bitonic/iter_par/cmake-build-debug/CMakeFiles/rebuild_cache.dir

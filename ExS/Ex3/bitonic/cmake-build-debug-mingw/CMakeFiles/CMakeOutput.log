@@ -1,0 +1,27 @@
+The system is: Windows - 10.0.19045 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/program files 2022/JetBrains/CLion 2022.2.3/bin/mingw/bin/gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "D:/OneDrive - Bar-Ilan University - Students/Desktop/TA/קודים/bitonic/cmake-build-debug-mingw/CMakeFiles/3.23.2/CompilerIdC/a.exe"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/program files 2022/JetBrains/CLion 2022.2.3/bin/mingw/bin/gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "D:/OneDrive - Bar-Ilan University - Students/Desktop/TA/קודים/bitonic/cmake-build-debug-mingw/CMakeFiles/3.23.2/CompilerIdC/a.exe"
+

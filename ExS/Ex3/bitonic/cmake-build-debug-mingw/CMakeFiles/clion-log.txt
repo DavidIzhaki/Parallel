@@ -1,0 +1,33 @@
+"D:\program files 2022\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/program files 2022/JetBrains/CLion 2022.2.3/bin/ninja/win/ninja.exe" -G Ninja -S "D:\OneDrive - Bar-Ilan University - Students\Desktop\TA\קודים\bitonic" -B "D:\OneDrive - Bar-Ilan University - Students\Desktop\TA\קודים\bitonic\cmake-build-debug-mingw"
+-- The C compiler identification is GNU 11.2.0
+-- Check for working C compiler: D:/program files 2022/JetBrains/CLion 2022.2.3/bin/mingw/bin/gcc.exe
+CMake Error:
+  Running
+
+   'D:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/ninja/win/ninja.exe' '-C' 'D:/OneDrive - Bar-Ilan University - Students/Desktop/TA/קודים/bitonic/cmake-build-debug-mingw/CMakeFiles/CMakeTmp' '-t' 'recompact'
+
+  failed with:
+
+   ninja: fatal: chdir to 'D:/OneDrive - Bar-Ilan University - Students/Desktop/TA/?????/bitonic/cmake-build-debug-mingw/CMakeFiles/CMakeTmp' - Invalid argument
+
+
+
+CMake Error:
+  Running
+
+   'D:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/ninja/win/ninja.exe' '-C' 'D:/OneDrive - Bar-Ilan University - Students/Desktop/TA/קודים/bitonic/cmake-build-debug-mingw/CMakeFiles/CMakeTmp' '-t' 'restat' 'build.ninja'
+
+  failed with:
+
+   ninja: fatal: chdir to 'D:/OneDrive - Bar-Ilan University - Students/Desktop/TA/?????/bitonic/cmake-build-debug-mingw/CMakeFiles/CMakeTmp' - Invalid argument
+
+
+
+CMake Error at D:/program files 2022/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake:56 (try_compile):
+  Failed to generate test project build system.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/OneDrive - Bar-Ilan University - Students/Desktop/TA/קודים/bitonic/cmake-build-debug-mingw/CMakeFiles/CMakeOutput.log".

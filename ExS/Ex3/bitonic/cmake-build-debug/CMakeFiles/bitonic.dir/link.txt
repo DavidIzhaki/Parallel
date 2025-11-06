@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/bitonic.dir/recursive_bitonic_sort.c.o -o bitonic 

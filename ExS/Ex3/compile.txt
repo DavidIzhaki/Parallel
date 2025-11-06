@@ -1,0 +1,8 @@
+For main.c : 
+gcc -Wall -Wextra -O2 -pthread -o tp_demo main.c thr_pool.c
+./tp_demo
+
+For pi_squential.:
+gcc -O3 -march=native -Wall -Wextra -o pi_seq pi_sequential.c
+./pi_seq            # default 10,000,000 samples
+./pi_seq 1000000    # or choose your own N

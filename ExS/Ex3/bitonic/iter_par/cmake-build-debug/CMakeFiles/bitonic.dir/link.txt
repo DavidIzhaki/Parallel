@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/bitonic.dir/iter_parallel.c.o CMakeFiles/bitonic.dir/thr_pool.c.o -o bitonic 

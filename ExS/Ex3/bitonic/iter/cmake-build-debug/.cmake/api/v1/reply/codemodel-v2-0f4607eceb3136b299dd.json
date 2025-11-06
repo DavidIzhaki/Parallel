@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "bitonic",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bitonic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bitonic-Debug-8e74898a0e196dc46f29.json",
+					"name" : "bitonic",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/d/OneDrive - Bar-Ilan University - Students/Desktop/TA/\u05e7\u05d5\u05d3\u05d9\u05dd/bitonic/iter/cmake-build-debug",
+		"source" : "/mnt/d/OneDrive - Bar-Ilan University - Students/Desktop/TA/\u05e7\u05d5\u05d3\u05d9\u05dd/bitonic/iter"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
