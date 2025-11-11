@@ -1,0 +1,9 @@
+gcc tree_thr_pool_demo.c thr_pool.c -pthread -O2 -o tree_thr_pool_demo
+./tree_thr_pool_demo N 
+#N = NUMBER OF NODES
+
+gcc tree_thr_pool_demo2.c thr_pool.c -pthread -O2 -o tree_thr_pool_demo2
+./tree_thr_pool_demo N G T
+#N = NUMBER OF NODES
+#G = Grain
+#T = NUMBER OF THREADS
