@@ -1,0 +1,66 @@
+For sections.c : 
+gcc -O2 -fopenmp sections.c -o sections 
+Then: ./sections
+
+For sections_nowait.c : 
+gcc -O2 -fopenmp sections_nowait.c -o sections_nowait 
+Then: ./sections_nowait
+
+For single.c : 
+gcc -O2 -fopenmp single.c -o single 
+Then: ./single
+
+For tasks.c : 
+gcc -O2 -fopenmp tasks.c -o tasks 
+Then: ./tasks
+
+For tasks_nowait.c : 
+gcc -O2 -fopenmp tasks_nowait.c -o tasks_nowait 
+Then: ./tasks_nowait
+
+For taskwait_1.c : 
+gcc -O2 -fopenmp taskwait_1.c -o taskwait_1 
+Then: ./taskwait_1
+
+For taskwait_2.c : 
+gcc -O2 -fopenmp taskwait_2.c -o taskwait_2 
+Then: ./taskwait_2
+
+For taskwait_3.c : 
+gcc -O2 -fopenmp taskwait_3.c -o taskwait_3 
+Then: ./taskwait_3
+
+For taskwait_4.c : 
+gcc -O2 -fopenmp taskwait_4.c -o taskwait_4 
+Then: ./taskwait_4
+
+
+For list_tasks.c : 
+gcc -O2 -fopenmp list_tasks.c -o list_tasks 
+Then: ./list_tasks
+
+For untied_task.c : 
+gcc -O2 -fopenmp untied_task.c -o untied_task 
+Then: ./untied_task
+
+For tree_tasks_untied.c : 
+gcc -O2 -fopenmp tree_tasks_untied.c -o tree_tasks_untied 
+Then: ./tree_tasks_untied
+
+For taskgroup1.c : 
+gcc -O2 -fopenmp taskgroup1.c -o taskgroup1 
+Then: ./taskgroup1
+
+For taskgroup2.c : 
+gcc -O2 -fopenmp taskgroup2.c -o taskgroup2 
+Then: ./taskgroup2
+
+For depend.c : 
+gcc -O2 -fopenmp depend.c -o depend 
+Then: ./depend
+
+
+For depend_fix.c : 
+gcc -O2 -fopenmp depend_fix.c -o depend_fix 
+Then: ./depend_fix
+

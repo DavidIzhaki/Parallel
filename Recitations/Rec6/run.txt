@@ -1,0 +1,59 @@
+For beginning_of_omp.c : 
+gcc -Wall -Wextra -O2 -fopenmp beginning_of_omp.c -o beginning_of_omp
+Then: ./beginning_of_omp
+
+For euler.c:
+gcc -O2 -fopenmp euler.c -lm -o euler
+Then: ./euler
+
+For sum_array.c : 
+gcc -O2 -fopenmp sum_array.c -o sum_array
+Then: ./sum_array
+
+For sum_array_false_sharing.c : 
+gcc -O2 -fopenmp sum_array_false_sharing.c -o sum_array_fs
+Then: ./sum_array_fs
+
+For critical_example.c :
+gcc -O2 -fopenmp critical_example.c -o critical_example
+Then: ./critical_example
+
+For for_example1.c :
+gcc -O2 -fopenmp for_example1.c -o for_example1
+Then: ./for_example1
+
+
+For for_static_example.c :
+gcc -O2 -fopenmp for_static_example.c -o for_se1
+Then: ./for_se1
+
+For for_dynamic_example.c :
+gcc -O2 -fopenmp for_dynamic_example.c -o for_de1
+Then: ./for_de1
+
+For for_compare_d_vs_s.c :
+gcc -O2 -fopenmp for_compare_d_vs_s.c -o for_cds -lm
+Then: ./for_cds
+
+
+For reduction_example.c : 
+gcc -O2 -fopenmp reduction_example.c -o for_reduction -lm
+Then: ./for_reduction
+
+For collapse.c : 
+gcc -O2 -fopenmp collapse.c -o collapse 
+Then: ./collapse
+
+
+For firstprivate.c : 
+gcc -O2 -fopenmp firstprivate.c -o firstprivate 
+Then: ./firstprivate
+
+
+For lastprivate.c : 
+gcc -O2 -fopenmp lastprivate.c -o lastprivate 
+Then: ./lastprivate
+
+For deafult.c : 
+gcc -O2 -fopenmp deafult.c -o deafult 
+Then: ./deafult
