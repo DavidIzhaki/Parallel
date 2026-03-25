@@ -1,0 +1,56 @@
+// need to download mpi to the university server and then: 
+export PATH=$HOME/local/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/local/lib:$LD_LIBRARY_PATH
+
+
+hello_mpi.c - 
+Compile : mpicc hello_mpi.c -o hello_mpi
+Run : mpirun -np 4 ./hello_mpi
+
+send_mpi.c - 
+Compile : mpicc send_mpi.c -o send_mpi
+Run : mpirun -np 4 ./send_mpi
+
+send_recv_mpi.c - 
+Compile : mpicc send_recv_mpi.c -o send_recv_mpi
+Run : mpirun -np 4 ./send_recv_mpi
+
+
+bcast_mpi.c - 
+Compile : mpicc bcast_mpi.c -o bcast_mpi
+Run : mpirun -np 4 ./bcast_mpi
+
+barrier_mpi.c - 
+Compile : mpicc barrier_mpi.c -o barrier_mpi
+Run : mpirun -np 4 ./barrier_mpi
+
+monte_carlo_pi_serial - 
+gcc -O2 monte_carlo_pi_serial.c -o pi_serial
+./pi_serial 10000000
+
+monte_carlo_mpi_first_try.c - 
+Compile : mpicc monte_carlo_mpi_first_try.c -o mcft
+Run : mpirun -np 4 ./mcft
+
+monte_carlo_mpi_second_try.c - 
+Compile : mpicc monte_carlo_mpi_second_try.c -o mcst
+Run : mpirun -np 4 ./mcst
+
+
+gather_example.c - 
+Compile : mpicc gather_example.c -o gather
+Run : mpirun -np 4 ./gather
+
+
+monte_gather_mpi.c - 
+Compile : mpicc monte_gather_mpi.c -o mongather
+Run : mpirun -np 4 ./mongather
+
+reduce_min.c - 
+Compile : mpicc reduce_min.c -o rm
+Run : mpirun -np 4 ./rm
+
+
+monte_reduce_mpi.c - 
+Compile : mpicc monte_reduce_mpi.c -o monreduce
+Run : mpirun -np 4 ./monreduce
